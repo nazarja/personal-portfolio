@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: url("../images/bg.jpg");
+}
+
+canvas {
+    background: rgba(21, 21, 21, 0.7);
+    display: block;
+    margin: 0 auto;
+    border: 7px solid #CD1FD8;
+    box-shadow: 0px 0px 15px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 11px;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#control-area {
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1260px;
+    border: 7px solid #CD1FD8;
+    box-shadow: 0px 0px 15px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 11px;
+    background: rgba( 12, 7, 48, 0.5);
+    margin: auto;
+    margin-top: 25px;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+
+#footer a {
+    color: pink;
+    font-weight: bold;
+}

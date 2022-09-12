@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Browse The Movie Database (TMDb) for Movies and TV Shows and Create your own Custom Lists.">
+    <title>Movie List - TMDb</title>
+    <link rel="icon" href="app/img/favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="app/styles/css/style.css">
+</head>
+<body>
+
+    
+    <header>
+        <!-- TOPBAR, LOGO & MOBILE MENU TOGGLE -->
+        <div id="topbar">
+            <a href="index.html" id="logo">
+                <i class="material-icons" id="movie-icon">movie_filter</i>
+                <h1>Movie List</h1>
+            </a>
+            <span id="ref-link">
+                Design & Code by <a href="https://seanmurphy.dev">Sean Murphy</a>
+            </span>
+            <i tabindex="0" aria-label="menu button" class="material-icons" id="menu-btn">menu</i>
+        </div>
+
+        <!-- SEARCH INPUT & SEARCH RESULTS -->
+        <div id="search">
+            <input id="search-input" type="text" placeholder="Search TMDb for Movies & TV Shows ..." autocomplete="off" maxlength="100">
+            <i tabindex="0" class="material-icons search-clear">close</i>
+            <div id="search-results"></div>
+        </div>
+
+        <!-- PRIMARY & SECONDRY NAVIGATION -->
+        <nav>
+            <div id="secondry-nav"></div>
+            <div id="primary-nav">
+                <ul>
+                    <li tabindex="1" class="active-parent nav-parent nav-item" data-nav="movies,popular">Movies</li>
+                    <li tabindex="1" class="nav-parent nav-item" data-nav="tvshows,popular">TV Shows</li>
+                    <li tabindex="1" class="nav-parent nav-item" data-nav="mylists,null">My Lists</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- CONTENT CHANGES DYNAMICALLY BASED ON NAVIGATION -->
+    <main id="main">
+
+        <!-- MAIN CONTENT -->
+        <div id="main-content"></div>
+        <div id="main-pagination"></div>
+
+        <!-- FULL MEDIA CONTENT -->
+        <div id="full-media-content"></div>
+
+        <!-- MY LISTS -->
+        <div id="main-mylists">
+            <h1 class="list-heading">My Lists</h1>
+            <p class="create-new-list" onclick="openAddNewList('#mylists-add-new-list')">
+                Create New List
+                <i class="material-icons new-list-icon">fiber_new</i>
+            </p>
+
+            <!-- ADD NEW LIST INPUT -->
+            <div id="mylists-add-new-list" class="add-new-list">
+                <p class="list-p">
+                    Create New List
+                    <i class="material-icons close-icon" onclick="closeAddNewList('#mylists-add-new-list')">close</i>
+                </p>
+                <input id="mylists-add-new-list-input" type="text" class="new-list-input" maxlength="20">
+                <i class="material-icons playlist-add-icon" onclick="addNewList('#mylists-add-new-list','#mylists-add-new-list-input')">playlist_add</i>
+            </div>
+            
+            <!-- HR -->
+            <hr />
+            <div id="user-lists"></div>
+        </div>
+
+       
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="app/js/dist/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,166 @@
+<%- include ( '../partials/header' )  %>
+<%- include ( '../partials/fullscreen-image' )  %>
+<%- include ( './info' )  %>
+
+<!-- start of index page -->
+<main id="index">
+    <%- include ( '../partials/navigation-index' )  %>
+
+    <div id="data-scroll" data-scroll>
+        <div class="content">
+
+            <!-- Coding -->
+            <div class="item" id="no01">
+                <h2 class="header-title">Projects</h2>
+                <a href="https://nicola-murphy-design.firebaseapp.com" target="_blank">
+                    <div class="item__img-wrap">
+                        <div class="item__img item__img--t1"></div>
+                    </div>
+                </a>
+                <div class="item__caption">
+                    <h2 class="item__caption-title">
+                        <a href="https://nicola-murphy-design.firebaseapp.com" target="_blank">
+                            Nicola's Portfolio
+                        </a>
+                    </h2>
+                    <p class="item__caption-copy">
+                        A bespoke custom website for an international graphic designer, modernly themed with gsap animations.
+                        <div class="sub-caption">JavaScript, React, Redux, Firebase, GSAP</div>
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="no02">
+                <a href="https://sm-foodie.herokuapp.com/" target="_blank">
+                    <div class="item__img-wrap">
+                        <div class="item__img item__img--t2"></div>
+                    </div>
+                </a>
+                <div class="item__caption">
+                    <h2 class="item__caption-title">
+                        <a href="https://sm-foodie.herokuapp.com/" target="_blank">
+                            Foodie
+                        </a>
+                    </h2>
+                    <p class="item__caption-copy">
+                        A recipe sharing website with a custom written web scraper. Login, explore, create, and comment on hundreds of recipes.
+                        <div class="sub-caption">Python, Flask, MongoDB, BeautifulSoup</div>
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="no03">
+                <a href="https://issue-tracker-sm.herokuapp.com/" target="_blank">
+                    <div class="item__img-wrap">
+                        <div class="item__img item__img--t3"></div>
+                    </div>
+                </a>
+                <div class="item__caption">
+                    <h2 class="item__caption-title">
+                        <a href="https://issue-tracker-sm.herokuapp.com/" target="_blank">
+                            Issue Tracker
+                        </a>
+                    </h2>
+                    <p class="item__caption-copy">
+                        A full-stack app for creating issues, commenting and purchasing support tickets. Login with github, pay with stripe. 
+                        <div class="sub-caption">django, rest-framework, orm, allauth, stripe</div>
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="no04">
+                <a href="/movielist" target="_blank">
+                    <div class="item__img-wrap">
+                        <div class="item__img item__img--t1"></div>
+                    </div>
+                </a>
+                <div class="item__caption">
+                    <h2 class="item__caption-title">
+                        <a href="/movielist" target="_blank">
+                           MovieList
+                        </a>
+                    </h2>
+                    <p class="item__caption-copy">
+                        Utilising tmDB and localStorage Api's to obtain data, images and perform crud actions on a personal list.
+                        <div class="sub-caption">JavaScript, SASS, LocalStorage, Gulp</div>
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="no05">
+                <a href="/photojs" target="_blank">
+                    <div class="item__img-wrap">
+                        <div class="item__img item__img--t2"></div>
+                    </div>
+                </a>
+                <div class="item__caption">
+                    <h2 class="item__caption-title">
+                        <a href="/photojs" target="_blank">
+                            PhotoJS
+                        </a>
+                    </h2>
+                    <p class="item__caption-copy">
+                        Inspired by photo editing software, it showcases the power of css variables.
+                        <div class="sub-caption">JavaScript, CSS</div>
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="no06">
+                <a href="/breakout" target="_blank">
+                    <div class="item__img-wrap">
+                        <div class="item__img item__img--t3"></div>
+                    </div>
+                </a>
+                <div class="item__caption">
+                    <h2 class="item__caption-title">
+                        <a href="/breakout" target="_blank">
+                            Breakout
+                        </a>
+                    </h2>
+                    <p class="item__caption-copy">
+                        Demonstrating collision detection and requestAnimationFrame in this fun game.
+                        <div class="sub-caption">JavaScript, CSS</div>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artwork -->
+            <div class="item" id="no07">
+                <h2 class="header-title-middle">ARTWORK</h2>
+                <div class="item__img-wrap">
+                    <div class="item__img item__img--t1" data-name="black-book.png"></div>
+                </div>
+                <div class="item__caption">
+                    <h2 class="item__caption-title" data-name="black-book.png">Black Book</h2>
+                    <p class="item__caption-copy">
+                        An alternative rendition of a movie poster for the fantastic film `Black Book (2006)`.
+                        <div class="sub-caption" data-name="black-book.png">see fullscreen</div>
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="no08">
+                <div class="item__img-wrap">
+                    <div class="item__img item__img--t3" data-name="dark-night.png"></div>
+                </div>
+                <div class="item__caption">
+                    <h2 class="item__caption-title" data-name="dark-night.png">Dark Night</h2>
+                    <p class="item__caption-copy">
+                        A compilation of personally taken photographs to create an ominous scene.
+                        <div class="sub-caption" data-name="dark-night.png">see fullscreen</div>
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="no09">
+                <div class="item__img-wrap">
+                    <div class="item__img item__img--t2" data-name="canary-mag.png"></div>
+                </div>
+                <div class="item__caption">
+                    <h2 class="item__caption-title" data-name="canary-mag.png">Canary Islands Magazine</h2>
+                    <p class="item__caption-copy">
+                        Tasked with creating a publishable worthy print magazine cover.
+                        <div class="sub-caption" data-name="canary-mag.png">see fullscreen</div>
+                    </p>
+                </div>
+            </div>
+            <hr style="width:100px; margin: 5vh auto 0; border-top: #fff" />
+        </div>
+    </div>
+</main>
+
+<%- include ( '../partials/footer' )  %>

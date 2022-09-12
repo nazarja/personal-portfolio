@@ -1,0 +1,331 @@
+#info {
+    position: absolute;
+    height: calc(100% + 3vh);
+    width: 100vw;
+    top: 0;
+    right: -100vw;
+    z-index: 200;
+    font-family: "Graphik Regular";
+}
+
+#info-content {
+    margin: 0 auto 200px 0px;
+    padding: 0 5%;
+}
+
+#info h2 {
+    font-family: "Bebasneue Regular", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.info-animate-0, .info-animate-1 {
+    opacity: 0;
+}
+
+/*============================
+    Navigation-info
+============================*/
+
+#navigation-info {
+    width: 90vw;
+    margin: auto;
+    top: 5vh;
+    position: fixed;
+    z-index: 205;
+    left: 150%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+}
+
+#navigation-info ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Paralucent Regular", sans-serif;
+}
+
+#navigation-info ul li {
+    display: inline-block;
+    list-style: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#navigation-info ul li:last-child {
+    position: relative;
+    float: right;
+}
+
+#navigation-info ul li a {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+#navigation-info ul li>#back #back-arrow svg {
+    color: white;
+    stroke: none;
+    fill: white;
+    width: 15px;
+    margin-right: 5px;
+    transition: .3s;
+    transform: translateX(0%);
+}
+
+#navigation-info ul li:hover>#back #back-arrow svg {
+    display: inline-block;
+    transition: .3s;
+    transform: translateX(-40%);
+}
+
+#email {
+    background: #313131;
+    border-radius: 50px;
+    transition: .3s;
+    margin-top: -5px;
+    color: #999;
+    transition: .3s;
+}
+
+#email a {
+    color: #777;
+}
+
+#email:hover {
+    background: transparent;
+    border-radius: 0px;
+}
+
+#email a:hover {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+/*============================
+    Portrait
+============================*/
+
+#portrait {
+    margin-top: 15vh;
+    height: 30vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url(/images/portrait-cropped.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    cursor: zoom-in;
+}
+
+#introduction {
+    margin: 3% auto 0;
+}
+
+#introduction .title {
+    font-family: "Abril Bold", sans-serif;
+    margin: 0;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#introduction .paragraph {
+    max-width: 1000px;
+    font-family: "Graphik Regular", sans-serif;
+    text-align: right;
+    line-height: 1.8rem;
+    padding: 2% 0;
+    font-size: 1.4rem;
+    margin: auto;
+    padding-bottom: 0;
+    color: #777;
+}
+
+/*============================
+    Code / Design
+============================*/
+
+#coding {
+    max-width: 1000px;
+    text-align: left;
+    margin: auto;
+}
+
+#coding h4 {
+    padding: 0;
+    margin: 15px 5px 5px;
+    color: #777;
+    font-size: .8rem;
+}
+
+#coding ul {
+    padding: 0;
+    margin: 0;
+}
+
+#coding ul li {
+    display: inline-block;
+    border: 2px solid #555;
+    padding: 7px 12px;
+    margin: 5px;
+    color: #eee;
+    font-family: monospace, sans-serif;
+    border-radius: 3px;
+}
+
+/*============================
+    Certificates / Courses
+============================*/
+
+table {
+    margin: auto;
+}
+
+table td {
+    padding: 5px;
+    vertical-align: top;
+    color: #777;
+}
+
+table td:last-child {
+    text-align: end;
+    padding-left: 50px;
+}
+
+/*============================
+    Contact 
+============================*/
+
+#contact ul {
+    max-width: 1000px;
+    margin: 3% auto 0;
+    padding: 0;
+    text-align: right;
+    list-style-type: none;
+}
+
+#contact ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+#contact .mobile {
+    display: none;
+}
+
+#contact .desktop {
+    display: inline-block;
+}
+
+#contact a:hover {
+    color: #777;
+    transition: .5s;
+}
+
+/*============================
+    Resume Section
+============================*/
+
+#resume {
+    text-align: center;
+    margin: 25vh 0;
+}
+
+#resume p {
+    font-size: 3rem;
+    font-family: "Abril Bold", sans-serif;
+}
+
+#resume a {
+    background-color: #404040;
+    border-radius: 5px;
+    transition: .3s;
+    padding: 15px 25px;
+    text-transform: lowercase;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+#resume a:hover {
+    background-color: transparent;
+    color: #777;
+}
+
+/*============================
+    Media Queries
+============================*/
+
+@media screen and (max-width: 800px) {
+    #info-content {
+        margin: 0 auto 200px 0px;
+    }
+    #info h2 {
+        font-size: 1.8rem;
+    }
+    #navigation-info {
+        font-size: .8rem;
+    }
+    #introduction .title {
+        line-height: 1.3em;
+        margin-top: 10%;
+    }
+    #introduction .paragraph {
+        font-family: "Graphik Regular", sans-serif;
+        text-align: center;
+        line-height: 1.4rem;
+        padding: 2% 5%;
+        font-size: 1rem !important;
+    }
+    #contact ul {
+        text-align: center;
+    }
+    #contact .mobile {
+        display: inline-block;
+    }
+    #contact .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #coding .desktop {
+        display: none;
+    }
+    #coding .mobile {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    tr {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    td {
+        color: #777;
+        display: block;
+        text-align: left !important;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #introduction .title {
+        font-size: 4rem;
+    }
+    #introduction .paragraph {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #portrait {
+        height: 50vh;
+        background-position: 50% 80%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #portrait {
+        height: 45vh;
+        background-position: 50% 80%;
+    }
+}

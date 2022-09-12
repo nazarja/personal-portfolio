@@ -1,0 +1,146 @@
+/*============================
+    Fonts
+============================*/
+
+@font-face {
+    font-family: "Bebasneue Regular";
+    src: url("/fonts/bebasneueregular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Graphik Regular";
+    src: url("/fonts/graphikregular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Paralucent Regular";
+    src: url("/fonts/paralucentregular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Abril Bold";
+    src: url("/fonts/abrilbold.woff") format("woff");
+}
+
+/*============================
+    Base
+============================*/
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+    font-family: "Bebasneue Regular", 'Open Sans', sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+a, a:visited, a:active, a:focus {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+h1 {
+    color: #fff;
+}
+
+#background-noise {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+#background-noise:after {
+    animation: grain 8s steps(10) infinite;
+    background-image: url('../images/broken_noise.png');
+    content: "";
+    height: 300%;
+    left: -50%;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+}
+
+@keyframes grain {
+    0%, 100% {
+        transform: translate(0, 0)
+    }
+    10% {
+        transform: translate(-5%, -10%)
+    }
+    20% {
+        transform: translate(-15%, 5%)
+    }
+    30% {
+        transform: translate(7%, -25%)
+    }
+    40% {
+        transform: translate(-5%, 25%)
+    }
+    50% {
+        transform: translate(-15%, 10%)
+    }
+    60% {
+        transform: translate(15%, 0%)
+    }
+    70% {
+        transform: translate(0%, 15%)
+    }
+    80% {
+        transform: translate(3%, 35%)
+    }
+    90% {
+        transform: translate(-10%, 10%)
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #414141;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1b1b1b;
+}
+
+.darken {
+    color: #777;
+}
+
+.colorise {
+    color: #7eb1d8;
+}
+/*============================
+    Loader
+============================*/
+
+#loader {
+    height: 100vh;
+    width: 100vw;
+    background: #111;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#loader p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.2rem;
+}

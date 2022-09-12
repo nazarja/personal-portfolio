@@ -1,0 +1,190 @@
+
+/*
+==================================================================
+    MY LISTS
+==================================================================
+*/
+
+#main-mylists {
+    display: none;
+
+    i {
+        @include pos-relative(5px, auto);
+        cursor: pointer;
+        &:hover {
+            transition: 0.4s;
+            color: $red;
+        }
+    }
+
+    hr {
+        margin: 0;
+        width: 100%;
+        color: #ddd;
+    }
+    
+    .list-heading {
+        @include pos-relative(13px, auto);
+        @extend %title-font;
+        display: inline-block;
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+
+    }
+
+    .create-new-list {
+        @extend %title-font;
+        @extend %underline;
+        position: relative;
+        float: right;
+        margin: 0;
+        .new-list-icon { 
+            color: $red; 
+            padding-right: 0;
+        }
+    }
+
+    .show-sample-lists {
+        @extend %underline;
+        color: #111;
+    }
+
+
+
+
+    /*
+    ============================
+        LISTS
+    ============================
+    */
+
+    #user-lists {
+
+        .list-titlebar {
+            margin: 0 0 50px;
+            padding-top: 30px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            @include pos-relative(30px, auto);
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+
+        i {
+            cursor: pointer;
+            &:hover {
+                transition: 0.4s;
+                color: $red;
+            }
+        }
+
+        .delete-list {
+            @extend %underline;
+            float: right;
+            
+            &:hover {
+                .delete-list-icon {
+                    transition: 0.4s;
+                    color: $red;
+                }
+            }
+        }
+
+        /*
+        ============================
+            LIST ITEM
+        ============================
+        */
+
+
+        .list-item {
+            margin: -15px 0;
+            width: 100%;
+
+            div {
+                display: inline-block;
+                font-size: 0.8em;
+                @include breakpoint {
+                    font-size: inherit;
+                }
+            }
+
+            .list-item-rating, .list-item-delete {
+                width: 20px;
+                @include breakpoint {
+                    width: 40px;
+                }
+            }
+
+            .list-item-title {
+                @extend %underline;
+                display: inline-block;
+                position: relative;
+                max-width: 200px;
+                top: 3px;
+                height: 1.4em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                &:hover {
+                    color: #222;
+                }
+                @include breakpoint {
+                    max-width: 800px;
+                    height: auto;
+                    top: 5px;
+                    font-size: inherit;
+                }
+            }
+
+            
+        } 
+    }
+}
+
+
+
+/*
+==================================================================
+    LIST EDITORS 
+==================================================================
+*/
+
+
+#mylists-add-new-list {
+    @include pos-absolute (60px, 5%, auto, auto);
+    @extend %add-media-list;
+
+    .list-p {
+        @extend %no-spacing;
+        @extend %title-font 
+    }
+
+    .close-icon {
+        @include pos-relative(5px, 77px);
+        display: inline-block;
+        color: $red;
+        &:hover {
+            transition: 0s;
+        }
+    }
+    .playlist-add-icon {
+        color: $green;
+        &:hover {
+            color: $green;
+        }
+    }
+
+    .new-list-input {
+        height: 25px;
+        border-radius: 5px;
+        border: 1px solid #999;
+        padding: 0 10px;
+        font-family: monospace;
+    } 
+}
+
+
+
+
