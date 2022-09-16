@@ -129,48 +129,55 @@
 
 .item:nth-child(2) .item__img-wrap {
     width: 1000px;
+    --aspect-ratio: 1500/844;
+    --image: url(/images/snake.png);
+}
+
+
+.item:nth-child(3) .item__img-wrap {
+    width: 1000px;
     --aspect-ratio: 120/76;
     --image: url(/images/foodie.png);
 }
 
-.item:nth-child(3) .item__img-wrap {
+.item:nth-child(4) .item__img-wrap {
     width: 900px;
     --aspect-ratio: 1000/749;
     --image: url(/images/issue-tracker.png);
 }
 
-.item:nth-child(4) .item__img-wrap {
+.item:nth-child(5) .item__img-wrap {
     width: 1000px;
     --aspect-ratio: 120/76;
     --image: url(/images/movielist.png);
 }
 
-.item:nth-child(5) .item__img-wrap {
+.item:nth-child(6) .item__img-wrap {
     width: 800px;
     --aspect-ratio: 900/505;
     --image: url(/images/photoJS.png);
 }
 
-.item:nth-child(6) .item__img-wrap {
+.item:nth-child(7) .item__img-wrap {
     width: 1000px;
     --aspect-ratio: 1500/844;
     --image: url(/images/breakout.png);
 }
 
-.item:nth-child(7) .item__img-wrap {
+.item:nth-child(8) .item__img-wrap {
     width: 700px;
     --aspect-ratio: 700/749;
     --image: url(/images/black-book.png);
 }
 
-.item:nth-child(8) .item__img-wrap {
+.item:nth-child(9) .item__img-wrap {
     width: 1000px;
     height: 500px;
     --aspect-ratio: 1000/362;
     --image: url(/images/dark-night.png);
 }
 
-.item:nth-child(9) .item__img-wrap {
+.item:nth-child(10) .item__img-wrap {
     --aspect-ratio: 60/60;
     --image: url(/images/canary-mag.png);
 }
