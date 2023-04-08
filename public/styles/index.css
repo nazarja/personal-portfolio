@@ -269,11 +269,23 @@
 
 .sub-caption {
     position: absolute;
-    bottom: 3%;
+    bottom: 0%;
     color: #717171;
     font-family: "Graphik Regular";
     font-size: .8rem;
     text-transform: lowercase;
+}
+
+.github-link {
+    position: absolute;
+    margin-top: 10px;
+    color: #aaa !important;
+    font-size: .9em;
+    transition: .3s;
+}
+
+.github-link:hover {
+    color: #eee !important;
 }
 
 /*============================
