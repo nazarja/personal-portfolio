@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <Link rel="icon" href="./icon.png" size="512x512" />
+    <title>Timer Until</title>
+</head>
+<body>
+    <nav>
+        <menu>
+          <span id="title">Countdown Calendar</span>
+          <span id="days"></span>
+          <button id="reset">Reset Date</button>
+        </menu>
+      </nav>
+      
+      <div id="setup">
+        <p>When are you counting down to?</p>
+        <span>Enter Date:</span> <input type="date" min="" max="" />
+      </div>
+      
+      <div id="today">
+          <p"></p>
+      </div>
+      <div id="content">
+        <div id="calendar">
+          <p id="date"></p>
+          <p id="result"></p>
+        </div> 
+      </div> 
+      <script src="./script.js"></script>     
+</body>
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+ * {
+	 font-family: 'Ubuntu', sans-serif;
+	 text-align: center;
+	 box-sizing: border-box;
+	 margin: 0;
+}
+ body {
+	 background-color: #fbfbfd;
+}
+ nav {
+	 background-color: #212123;
+	 color: #fbfbfd;
+	 padding: 10px;
+	 vertical-align: middle;
+	 font-weight: 300;
+}
+ nav #days span {
+	 font-weight: 700;
+}
+ nav menu {
+	 max-width: 800px;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 margin: auto;
+	 padding: 0;
+}
+ nav menu button {
+	 background-color: transparent;
+	 border: none;
+	 color: #2997ff;
+	 padding: 5px 10px;
+	 transition: 0.4s;
+}
+ nav menu button:hover {
+	 color: #fbfbfd;
+	 transition: 0.4s;
+	 cursor: pointer;
+}
+ #setup, #content {
+	 display: none;
+}
+ #setup, #content, #content #result {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+ #setup {
+	 font-size: 20px;
+	 top: 25%;
+	 font-weight: 300;
+}
+ #setup p {
+	 padding: 10% 0;
+	 color: #2997ff;
+}
+ #setup input[type="date"] {
+	 border-color: rgba(0, 0, 0, 0.24);
+	 border-radius: 8px;
+	 padding: 8px 14px;
+	 margin-left: 15px;
+	 font-size: 0.8em;
+	 font-weight: 300;
+}
+ #content {
+	 height: 400px;
+	 width: 400px;
+	 border-radius: 20%;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ #content #date {
+	 color: #f00;
+	 padding: 15% 5%;
+	 font-size: 225%;
+	 font-weight: 300;
+}
+ #content #result {
+	 color: #212123;
+	 font-size: 200px;
+	 margin-top: 7.5%;
+}
+
+#today {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+ 
