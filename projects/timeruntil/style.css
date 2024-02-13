@@ -87,4 +87,12 @@
     justify-content: center;
     margin-top: 10%;
 }
+
+@media screen and (max-width: 500px) {
+	#content {
+		margin: auto;
+		max-height: 80vw;
+		max-width: 80vw;
+	}
+}
  
