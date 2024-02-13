@@ -85,7 +85,7 @@
 #today {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 25%;
 }
 
 @media screen and (max-width: 500px) {
@@ -93,6 +93,10 @@
 		margin: auto;
 		max-height: 80vw;
 		max-width: 80vw;
+	}
+
+	#content #date {
+		font-size: 175%;
 	}
 }
  
